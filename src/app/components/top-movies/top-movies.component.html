@@ -1,0 +1,30 @@
+<section class="popular space">
+  <app-popular-movie></app-popular-movie>
+</section>
+
+<section id="movies-content" class="space">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4 col-lg-3" *ngFor="let items of topMovie">
+        <div class="movies" role="button">
+          <div class="card overflow-hidden position-relative">
+            <img
+              [src]="imagePath + items.poster_path"
+              [alt]="items.title"
+              [title]="items.title"
+              class="w-100 card-img-top main-img"
+            />
+            <p class="card-text shadow-des text-white p-2 fs-4">
+              {{ items.overview }}
+            </p>
+          </div>
+          <div class="card mt-2">
+            <div class="card-body">
+              <h5 class="card-title h3">{{ items.title }}</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

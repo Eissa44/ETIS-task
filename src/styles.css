@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-width: 90%;
+  --main-color: red;
+  --body-color: #dfdfdf;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--body-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a,
+span {
+  display: inline-block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+}
+
+.space {
+  padding-top: 11rem;
+}
+
+.active-link {
+  color: var(--main-color) !important;
+  border-radius: 5px;
+}
+
+#movies-content {
+  width: var(--main-width);
+  margin-inline: auto;
+}
+
+#movies-content .card {
+  transition: all 0.6s;
+}
+
+#movies-content .main-img {
+  transition: all 0.5s;
+}
+
+#movies-content .main-img:hover {
+  transform: scale(1.06);
+}
+
+.shadow-des {
+  content: "";
+  position: absolute;
+  background-color: #1b1b1b70;
+  width: 100%;
+  height: 100%;
+  top: 105%;
+  transition: all 0.5s ease;
+}
+
+#movies-content .card:hover .shadow-des {
+  top: 0;
+}
+
+#movies-content .movies {
+  border: 2px solid var(--main-color);
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative;
+}
+
+#movies-content .card-title {
+  height: 60px;
+}

@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="items container">
+    <h1>
+      <a class="navbar-brand" routerLink="home">Etisalat by</a>
+    </h1>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-links" id="navLinks">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="home" routerLinkActive="active-link"
+            >Top Movies</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="upcoming"
+            routerLinkActive="active-link"
+            >Up Coming</a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="playing"
+            routerLinkActive="active-link"
+            >playing Now</a
+          >
+        </li>
+
+        <ul>
+          <li class="nav-item">
+            <span role="button" (click)="sign()">SingOut</span>
+          </li>
+        </ul>
+      </ul>
+    </div>
+  </div>
+</nav>

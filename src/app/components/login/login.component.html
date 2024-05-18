@@ -1,0 +1,52 @@
+<div class="space">
+  <h1 class="header">Login with your account</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 w-50 mx-auto">
+        <form>
+          <div>
+            <label class="">Email address: </label>
+            <input
+              type="email"
+              class="form-control"
+              [(ngModel)]="email"
+              name="email"
+            />
+          </div>
+
+          <div>
+            <label class="">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              [(ngModel)]="password"
+              name="password"
+            />
+          </div>
+
+          <button
+            type="button"
+            class="btn btn-outline-primary my-3 btn-login"
+            (click)="login()"
+          >
+            Login
+          </button>
+        </form>
+
+        <div class="button-container">
+          <button type="button" class="btn btn-primary">
+            Login with Facebook
+          </button>
+          <button type="button" class="btn btn-danger">
+            Login with Google
+          </button>
+          <button type="button" class="btn btn-info">Login with Twitter</button>
+          <p>
+            No account yet?
+            <a [routerLink]="['/register']">Create an account</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
