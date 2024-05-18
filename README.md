@@ -1,6 +1,6 @@
-# Etisalat Task
+# Etisalat Tusk
 
-Welcome to the repository for my task
+Welcome to the repository for my tusk
 
 ## Description
 
